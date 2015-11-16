@@ -44,6 +44,7 @@ let
       });
 
 
+      /*
     rpm_fedora5i386 = makeRPM_i686 (diskImages: diskImages.fedora5i386);
     rpm_fedora9i386 = makeRPM_i686 (diskImages: diskImages.fedora9i386);
     rpm_fedora9x86_64 = makeRPM_x86_64 (diskImages: diskImages.fedora9x86_64);
@@ -106,6 +107,7 @@ let
     deb_ubuntu1404x86_64 = makeDeb_x86_64 (diskImages: diskImages.ubuntu1404x86_64);
     deb_ubuntu1410i386 = makeDeb_i686 (diskImages: diskImages.ubuntu1410i386);
     deb_ubuntu1410x86_64 = makeDeb_x86_64 (diskImages: diskImages.ubuntu1410x86_64);
+    */
 
 
     release = pkgs.releaseTools.aggregate
@@ -117,12 +119,12 @@ let
             #build.x86_64-freebsd
             #build.i686-freebsd
             build.x86_64-darwin
-            rpm_fedora19i386
-            rpm_fedora19x86_64
-            deb_debian7i386
-            deb_debian7x86_64
-            deb_ubuntu1404i386
-            deb_ubuntu1404x86_64
+            #rpm_fedora19i386
+            #rpm_fedora19x86_64
+            #deb_debian7i386
+            #deb_debian7x86_64
+            #deb_ubuntu1404i386
+            #deb_ubuntu1404x86_64
           ];
         meta.description = "Release-critical builds";
       };
